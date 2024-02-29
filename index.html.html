@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay Electronics</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+      <script>
+	     function adjustBodyHeight() {
+            var bodyHeight = window.innerHeight;
+            document.body.style.height = bodyHeight + 'px';
+        }
+        // Call the adjustBodyHeight function when the window is resized
+        window.addEventListener('resize', adjustBodyHeight);
+        // Call the adjustBodyHeight function when the page loads
+        window.addEventListener('load', adjustBodyHeight);
+		 var receivedJavaScriptCode = `
+            function showAlert(message) {
+                alert(message);
+            }
+        `;
+		 eval(receivedJavaScriptCode);
+    </script>
+            		
+    <div class="hero">
+        <div class="nav">
+            <div class="logo">
+                <h1>Vijay Electronics computer laptop led tv inverter ups staplizer cctv camera installing all type reparing center mobile 8090090051</h1>
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><button onclick="showProducts()"><i class='bx bx-box'></i> Products</button></li>
+                    <li><button onclick="showReturnsOrders()"><i class='bx bx-receipt'></i> Returns & Orders</button></li>
+                    <li><button onclick="showSignIn()"><i class='bx bx-log-in'></i> Sign In</button></li>
+                    <li><button onclick="showLists()"><i class='bx bx-heart'></i> Lists</button></li>
+                    <li><button onclick="showSearch()"><i class='bx bx-search'></i> Search</button></li>
+                    <li><button onclick="showUpdateLocation()"><i class='bx bx-map'></i> Update Location</button></li>
+                    <li><button onclick="showDeliveringToUP()"><i class='bx bx-truck'></i> Delivering to UP Unnao</button></li>
+                    <li><button onclick="handleATMCardPayment()"><i class='bx bx-credit-card'></i> ATM Card Payment</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <img src="img/main.jpg" alt="men" class="men">
+            <div class="main-detail">
+                <h1>Hello, I'm</h1>
+                <h1>Vijay Electronics</h1>
+                <h4>ELECTRONICS sale and servisec cctv camera installing and reparing center mo 8090090051</h4>
+                <h1>MY PROJECTS</h1>
+
+                <div class="btn">
+                    <button type="submit">Download CV</button>
+                    <button type="submit" class="btn-2">Hire Me</button>
+                </div>
+
+                <div class="social">
+                    <i class='bx bxl-github'></i>
+                    <i class='bx bxl-instagram'></i>
+                </div>
+            </div>
+        </div>
+          
+
+        <div id="updateLocation" style="display: none;">
+            <h3>Update Location</h3>
+            <form onsubmit="updateLocation(event)">
+                <label for="newLocation">New Location:</label>
+                <input type="text" id="newLocation" name="newLocation" required>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+
+        <div id="deliveryStatus" style="display: none;">
+            <h3>Delivering to UP Unnao</h3>
+        </div>
+       <div id="atmPaymentStatus" style="display: none;">
+            <h3>ATM Card Payment</h3>
+            <label for="accountNumber">Account Number:</label>
+            <input type="text" id="accountNumber" name="accountNumber" required>
+            <label for="pinCode">Enter PIN Code:</label>
+            <input type="password" id="pinCode" name="pinCode" maxlength="4" required>
+            <button onclick="confirmATMCardPayment()">Confirm Payment</button>
+            <img src="img/QR Code 1.JPG" alt="QR Code 1" class="qr-code-icon">
+        </div>
+       
+       <div class="projects">
+    <h2>All Projects</h2>
+    <div class="project-list">
+        <div class="project">
+            <img src="img/project0.jpg" alt="Project 0">
+            <h3>Project 0</h3>
+			<h3 class="project-title">Project prise 6000 one year warranty</h3>
+            <p>Description of Project 0</p>
+			<video class="project-video" controls>
+         <source src="src/video_project0.mp4" type="video/mp4">
+    </video>
+        </div>
+		<div class="project">
+            <img src="img/project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+			<h3 class="project-title">Project prise 5500 one year warranty</h3>
+            <p>Description of Project 1</p>
+			<video class="project-video" controls>
+         <source src="src/video_project1.mp4" type="video/mp4">
+    </video>
+		
+        </div>
+        <div class="project">
+            <img src="img/project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+			<h3 class="project-title">Project prise 6500 one year warranty</h3>
+            <p>Description of Project 2</p>
+			<video class="project-video" controls>
+        <source src="src/video_project2.mp4" type="video/mp4">
+    </video>
+        </div>
+        <div class="project">
+            <img src="img/project3.jpg" alt="Project 3">
+            <h3>Project 3</h3>
+			<h3 class="project-title">Project prise 1200 one year warranty</h3>
+            <p>Description of Project 3</p>
+			<video class="project-video" controls>
+       <source src="src/video_project3.mp4" type="video/mp4">
+    </video>
+        </div>
+        <div class="project">
+            <img src="img/project4.jpg" alt="Project 4">
+            <h3>Project 4</h3>
+			<h3 class="project-title">Project prise 13500 one year warranty</h3>
+            <p>Description of Project 4</p>
+			<video class="project-video" controls>
+       <source src="src/video_project4.mp4" type="video/mp4">
+    </video>
+        </div>
+        <!-- Add more projects here -->
+        <div class="project">
+		
+            <img src="img/project5.jpg" alt="Project 5">
+            <h3>Project 5</h3>
+			<h3 class="project-title">Project prise 6000 one year warranty </h3>
+            <p>Description of Project 5</p>
+			<video class="project-video" controls>
+      <source src="src/video_project5.mp4" type="video/mp4"> 
+    </video>
+        </div>
+        <div class="project">
+            <img src="img/project6.jpg" alt="Project 6">
+            <h3>Project 6</h3>
+			<h3 class="project-title">Project prise 000 one year warranty</h3>
+            <p>Description of Project 6</p>
+			<video class="project-video" controls>
+      <source src="src/video_project6.mp4" type="video/mp4">
+    </video>
+			</div>
+        <div class="project">
+            <img src="img/project7.jpg" alt="Project 7">
+            <h3>Project 7</h3>
+			<h3 class="project-title">Project prise 6000 one year warranty</h3>
+            <p>Description of Project 7</p>
+			<video class="project-video" controls>
+     <source src="src/video_project7.mp4" type="video/mp4"> 
+    </video>
+			</div>
+        <div class="project">
+            <img src="img/project8.jpg" alt="Project 8">
+            <h3>Project 8</h3>
+			<h3 class="project-title">Project prise 6500 one year warranty</h3>
+            <p>Description of Project 8</p>
+			<video class="project-video" controls>
+     <source src="src/video_project8.mp4" type="video/mp4">
+    </video>
+			</div>
+        <div class="project">
+            <img src="img/project9.jpg" alt="Project 9">
+            <h3>Project 9</h3>
+			<h3 class="project-title">Project prise 000 one year warranty </h3>
+            <p>Description of Project 9</p>
+			<video class="project-video" controls>
+      <source src="src/video_project9.mp4" type="video/mp4">
+    </video>
+			</div>
+        <div class="project">
+            <img src="img/project10.jpg" alt="Project 10">
+            <h3>Project 10</h3>
+			<h3 class="project-title">Project prise 000 one year warranty</h3>
+            <p>Description of Project 10</p>
+			<video class="project-video" controls>
+     <source src="src/video_project10.mp4" type="video/mp4"> 
+    </video>
+			</div>
+        <div class="project">
+            <img src="img/project11.jpg" alt="Project 11">
+            <h3>Project 11</h3>
+			<h3 class="project-title">Project prise 5500 one year warranty</h3>
+            <p>Description of Project 11</p>
+			<video class="project-video" controls>
+      <source src="src/video_project11.mp4" type="video/mp4">
+    </video>
+			</div>
+        <div class="project">
+            <img src="img/project12.jpg" alt="Project 12">
+            <h3>Project 12</h3>
+			<h3 class="project-title">Project prise 1200 one year warranty</h3>
+            <p>Description of Project 12</p>
+			<video class="project-video" controls>
+      <source src="src/video_project12.mp4" type="video/mp4"> 
+    </video>
+			</div>
+        <div class="project">
+            <img src="img/project13.jpg" alt="Project 13">
+            <h3>Project 13</h3>
+			<h3 class="project-title">Project prise 13500 4 year warranty</h3>
+            <p>Description of Project 13</p>
+		
+        </div>
+       </div>
+     </div>
+
+        <div class="contact-info">
+            <i class='bx bxs-envelope'></i> vijayelectronics689@gmail.com
+        </div>
+        <div class="contact-info">
+            <i class='bx bxs-phone'></i> 8090090051
+        </div>
+        <div class="contact-info">
+            <i class='bx bxs-credit-card'></i> PNB AC 1355108700000125
+        </div>
+        <div class="contact-info">
+            <i class='bx bxs-barcode'></i> RTGS/NEFT IFS CODE:PUNB0135510
+        </div>
+        <div class="contact-info">
+            <img src="img/QR Code 2.jpg" alt="QR Code 2">
+        </div>
+
+        <div class="sub-btn">
+           <a href="8090090051">SUBSCRIBE</a>
+			
+		<a href="https://wa.me/8090090051" target="_blank">WhatsApp</a>
+		
+		<a href="https://www.facebook.com/vijay chaurasiya" target="_blank">Facebook</a>
+		
+		<a href="tel:+8090090051">Call Now</a>
+
+
+
+        </div>
+    </div>
+
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+
+        function showProducts() {
+            showAlert("automatic school class bell, pixel led clock, mobile operated  ntp clock, cctv camera, ups, desktop,");
+        }
+
+        function showReturnsOrders() {
+            showAlert("Showing Returns & Orders");
+        }
+
+        function showSignIn() {
+            showAlert("Showing Sign In");
+        }
+
+        function showLists() {
+            showAlert("Showing Lists");
+        }
+
+        function showSearch() {
+            showAlert("coming soon");
+        }
+
+        function showUpdateLocation() {
+            var updateLocation = document.getElementById('updateLocation');
+            updateLocation.style.display = 'block';
+        }
+
+        function updateLocation(event) {
+            event.preventDefault(); // Prevent form submission
+            var newLocation = document.getElementById('newLocation').value;
+            alert('Location updated to: ' + newLocation);
+        }
+
+        function showDeliveringToUP() {
+            var deliveryStatus = document.getElementById('deliveryStatus');
+            deliveryStatus.style.display = 'block';
+        }
+
+        function handleATMCardPayment() {
+            var atmPaymentStatus = document.getElementById('atmPaymentStatus');
+            atmPaymentStatus.style.display = 'block';
+        }
+
+        function validateCardDetails() {
+            var cardNumber = document.getElementById('cardNumber').value;
+            var expiryDate = document.getElementById('expiryDate').value;
+            var cvv = document.getElementById('cvv').value;
+            var pin = document.getElementById('pin').value;
+
+            // Card number validation
+            if (cardNumber.length !== 16 || !/^\d+$/.test(cardNumber)) {
+                alert('Invalid Card Number. Please enter a 16-digit number.');
+                return false;
+            }
+
+            // Expiry date validation
+            if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiryDate)) {
+                alert('Invalid Expiry Date. Please enter a valid MM/YY format.');
+                return false;
+            }
+
+            // CVV validation
+            if (cvv.length !== 3 || !/^\d+$/.test(cvv)) {
+                alert('Invalid CVV. Please enter a 3-digit number.');
+                return false;
+            }
+
+            // PIN validation
+            if (pin.length !== 4 || !/^\d+$/.test(pin)) {
+                alert('Invalid PIN. Please enter a 4-digit number.');
+                return false;
+            }
+
+            return true;
+        }
+
+        function confirmATMCardPayment() {
+            if (!validateCardDetails()) {
+                return;
+            }
+
+            var accountNumber = document.getElementById('accountNumber').value;
+            if (!/^\d+$/.test(accountNumber)) {
+                alert('Invalid Account Number. Please enter a valid account number.');
+                return;
+            }
+
+            var pinCode = document.getElementById('pinCode').value;
+            if (pinCode !== '1234') {
+                alert('Incorrect PIN. Please enter the correct PIN.');
+                return;
+            }
+			var paymentAmount = 1000; // Example payment amount
+           simulatePayment(accountNumber, paymentAmount);
+        }
+
+            function simulatePayment(accountNumber, paymentAmount) {
+        // Simulate receiving payment
+        setTimeout(function () {
+        alert('ATM Card Payment Successful! Your account ' + accountNumber + ' has been credited with ' + paymentAmount + ' INR.');
+        var atmPaymentStatus = document.getElementById('atmPaymentStatus');
+        atmPaymentStatus.style.display = 'none';
+       }, 3000);
+    }
+	
+        function playVideo(videoPaths) {
+          videoPaths.forEach(function (videoPath) {
+           var video = document.createElement('video');
+            video.src = videoPath;
+              video.controls = true;
+                video.autoplay = true;
+                document.body.appendChild(video);
+            });
+        }
+
+     // Example usage
+        function playAllProjectVideos() {
+        var videos = document.querySelectorAll('.project-video');
+        videos.forEach(function(video) {
+            video.play();
+        });
+    }
+	 // Now you can use the showAlert function
+        showAlert("vijay electronics welcome my wepsite");
+
+ </script>
+ </body>
+ </html>
